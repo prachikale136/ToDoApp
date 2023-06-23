@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">;
+        <link rel="stylesheet" href="ToDoTask.css">
+    </head>
+    <body>
+        <!-- -- <div class="contain">-- -->
+        <div class="container">
+            <div class="form">
+                <div>
+                    <div>
+                        <label for="title"></label>
+                        <input type="text" placeholder="title" id="title">
+                    </div>
+                    <div>
+                        <label for="about"></label>
+                        <input type="text" placeholder="about" id="about">
+                    </div>
+                    <span id="error"></span>
+                    
+                </div>
+                <button type="button" value="+" onclick="addTask()">+</button>
+            </div>
+
+            <div class="text">
+                <hr>
+                 <ul id="list">
+                    <li>No Task</li>
+                 </ul>
+                
+                <hr>
+            </div>
+        </div>
+        <script src="ToDoTask.js"></script>
+    </body>
+    </html>

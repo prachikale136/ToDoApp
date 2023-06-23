@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">;
+        <link rel="stylesheet" href="updateToDo.css">
+        
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"><meta name='viewport' content='width=device-width, initial-scale=1'> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link href="blob:https://www.figma.com/04ae14af-e33a-433d-add0-2dd799523472">
+        <link href="blob:https://www.figma.com/56b8600d-4933-4cc3-8a31-10af8ef0f5dc">
+        <link href="blob:https://www.figma.com/5c4c0e49-4b55-4ba6-9ce4-95831b056853">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </head>
+    <body>
+        <!-- -- <div class="contain">-- -->
+        <div class="container">
+            <div class="main">
+                <div class="form">
+                    <div>
+                        <div>
+                            <label for="title"></label>
+                            <input type="text" placeholder="title" id="title">
+                        </div>
+                        <div>
+                            <label for="about"></label>
+                            <input type="text" placeholder="about" id="about">
+                        </div>
+                        <span id="error"></span>
+                        
+                    </div>
+                    <button type="button" value="+" onclick="addTask()" id="btn">+</button>
+                    
+    
+                </div>
+    
+                <div class="text">
+                    <hr>
+                     <ul id="list">
+                        <div id="editbtn">
+                            <button style='font-size:24px' onclick="editInfo(${i})" id="edit"><i class='far fa-edit'></i></button><i class='far fa-edit'></i>
+                        </div>
+                        
+                        <div>
+                            <button style="font-size:24px" onclick="deleteInfo({i})" id="delete"><i class="fa fa-trash-o"></i></button><i class='far fa-edit'></i>
+                        </div>
+                        <li></li>
+                     </ul>
+                    
+                    <hr>
+                </div>
+            </div>
+            
+        </div>
+        <script src="updateToDo.js"></script>
+        
+    </body>
+    </html>
